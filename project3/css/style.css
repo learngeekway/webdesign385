@@ -10,7 +10,8 @@
 }
 html {
   color: #555;
-  font-family: "Lato", "Arial" sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
+  font-family: ar;
   font-weight: 300;
   font-size: 20px;
   text-rendering: optimizeLegibility;
@@ -23,13 +24,10 @@ html {
 body{
   font-family:Verdana, Arial, sans-serif;
   background: url(/img/Hov.jpg) no-repeat;
-  //background-size: 100% 100%;
   background-size: cover;
 }
 
-html {
-  //height: 100%;
-}
+
 li {
   list-style: none;
 }
@@ -184,10 +182,8 @@ footer {
   margin-right: 20px;
 
 }
-.footer-nav li: last-child,
-.social-links li: last-child {
-  margin-right: 0;
-}
+
+
 .footer-nav li a:link,
 .footer-nav li a:visited,
 .social-links li a:link,

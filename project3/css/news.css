@@ -1,0 +1,273 @@
+/*----------------------------------------------
+  ------------------------------------------------
+  1. Universal Styles
+  ------------------------------------------------
+  ----------------------------------------------*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    background-color: #FAF0E6;
+    color: #36454F;
+    font-family: "Lato", "Arial" sans-serif;
+    font-weight: 300;
+    font-size: 17px;
+    text-rendering: optimizeLegibility;
+    margin-left: 130px;
+    margin-right: 140px;
+  }
+  *body {
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+    font-family:Verdana, Arial, sans-serif;
+   
+  }
+  li {
+    list-style: none;
+  }
+  /*----------------------------------------------
+    ------------------------------------------------
+    2. HEADER
+    ------------------------------------------------
+    ----------------------------------------------*/
+  /*------NAVIGATION------*/
+  nav {
+    position: relative;
+    
+    height: 80px;
+    margin-top: 0px;
+    border: 3px #FB8B24 solid;
+    background-color: #36454F;
+  }
+  
+  .nav-row ul{
+      position: relative;
+      text-align: center; 
+      display: flex;
+      flex-flow: row wrap; /*flex-direction & flex-wrap*/
+      justify-content: space-around;
+      padding-bottom: 20px;
+  }
+  .nav-row {
+    //border: 3px solid black;
+    padding-top: 10px;
+    //float: right;
+    //padding-bottom: 50px;
+  }
+  
+  .nav-menu-ulist {
+    display: inline-flex;
+  }
+  
+  .nav-menu-ulist a{
+    color: #faf0e6;
+    text-decoration: none;
+  
+  }
+  
+  .nav-menu-ulist li {
+    margin-right: 30px;
+    font-size: 2em;
+  
+  }
+  .nav-list h4:hover,
+  .nav-list h4:active{
+    color: #FB8B24;
+    transition: color 0.2s;
+  }
+
+  /*----------------------------------------------
+    ------------------------------------------------
+    3. MAIN CONTENT
+    ------------------------------------------------
+    ----------------------------------------------*/
+
+  article {
+    margin-top: 20px;
+    -webkit-columns: 2 200px;
+     -moz-columns: 2 200px;
+          columns: 2 200px;
+    margin-left: 130px;
+    margin-right: 140px;
+    //border: .5px solid #FB8B24;
+  }
+  
+  p {
+    margin-bottom: 1.3em;
+    font-size: 1em;
+  }
+
+  #author{
+    font-size: 1.1em;
+  }
+  
+  h1, h2, h3{
+    margin: 1.414em 0 0.5em;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  h1 {
+    margin-top: 0;
+    font-size: 3.157em;
+  }
+  
+  h2 {font-size: 2.369em;}
+  
+  h3 {font-size: 1.777em;}
+  
+  h4 {font-size: 1.333em;}
+  
+  small, .font_small {font-size: .75em;
+  }
+  hr{
+    margin-top: 30px;
+  }
+
+  hr, .references {
+    position: relative;
+    margin-left: 130px;
+    margin-right: 140px;
+  }
+  .references  {
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  @media only screen and (max-width: 1000px){
+  
+  
+    h1{
+      font-size: 1em;
+    }
+
+    nav{
+      width: 340px;
+      margin-right: 50px;
+    }
+    .nav-menu-ulist li {
+      margin-right: 30px;
+      font-size: 1em;
+    
+    }
+
+      
+    article {
+  
+      margin-left: 10px;
+      margin-right: 20px;
+      
+    }
+    
+  hr, .references {
+    position: relative;
+    margin-left: 30px;
+    margin-right: 40px;
+    text-align: center;
+  }
+  .references  {
+    position: relative;
+    padding-top: 20px;
+  }
+  
+  
+
+    p {
+      margin-bottom: 1.3em;
+      font-size: .8em;
+    }
+  
+    #author{
+      font-size: 1em;
+    }
+    
+   
+  }
+ 
+/*---------------------------------------------------*/
+/*  FOOTER*/
+/*---------------------------------------------------*/
+
+footer {
+  background-color: #333;
+  padding: 20px;
+  font-size: .5em;
+  text-align: center;
+}
+.footer-nav {
+  list-style: none;
+}
+
+.social-links {
+  list-style: none;
+}
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+
+}
+.footer-nav li: last-child,
+.social-links li: last-child {
+  margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+  text-decoration: none;
+  border: 0;
+  color: #888;
+}
+.footer-nav li a:hover,
+.footer-nav li a:active {
+  color: #FAF0E6;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+  font-size: 160%;
+}
+
+svg{
+  width: 20px;
+  height: 20px;
+  transition: color 0.2s;
+  
+}
+
+.social-links{
+  padding-top: 30px;
+}
+
+.facebook,
+.instagram,
+.x,
+.youtube {
+  transition: color 0.2s;
+  fill: #FAF0E6;
+}
+.facebook:hover{
+  fill: #3b5896;
+}
+.instagram:hover {
+  fill: #e95950;
+}
+.x:hover {
+  fill: #445059;
+}
+.youtube:hover {
+  fill: #ff0000;
+}
+
+footer p {
+  color: #888;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.3em;
+}

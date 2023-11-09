@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+   //background-color: #533549; 
+    color: #555;
+    font-family: 'Lato', 'Arial' sans-serif; 
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+}
+.clearfix {zoom: 1} /*fixes floated elments stacked next to each other*/
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+header {
+    background-color: black;
+    text-align: inherit;
+
+}
+nav {
+
+    border-bottom: solid 1px;
+    border-bottom-color: rgb(255, 215, 0);
+}
+
+body {
+    background-image: url(../img/forgetMeNot-falling2.png);
+    background-repeat: no-repeat;
+    background-position: -320px 490px;
+    height: 1000px;
+    background-color: rgb(247, 241, 246);
+}
+
+/*---------------------------------------------------*/
+/*   REUASABLE COMPONENTS  */
+/*---------------------------------------------------*/
+
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+    /*color: #080808;*/
+
+}
+
+//section{
+    padding: 80px 0;
+}
+
+//.box { /* span 1-of-4 content, added box to not mess with the grid content. spacing between li*/
+    padding: 1%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+
+
+
+/*******************************************************/
+/*              TEXT STYLE                            */
+/*******************************************************/
+
+//figcaption {
+    font-weight: bold;
+    width: 250px;
+}
+
+/*******************************************************/
+/*               HEADER                                */
+/*******************************************************/
+
+
+.logo {
+    position: relative;
+    height: 60px;
+    width: auto;
+    margin-left: 1%;
+    margin-top: .5%;
+    
+}
+.search-box {
+    position: absolute;
+    width: 125px;
+    height: 20px;
+    top: 20px;
+    left: 20%;
+}
+
+ .search-bar {
+     position: relative;
+    height: 20px;
+     width: 300px;
+    font-size: 10px;
+    border: none;
+    
+    top: -15px;  
+    overflow: hidden;
+      margin: 9px; 
+}
+
+ .ion-ios-search {
+    position: relative;
+    height: 20px;
+    font-size: 10px;
+     color: goldenrod;
+    border: none;
+    margin-left: 2%;
+    top: -9px;  
+    display: inline-flex;
+   
+    
+}
+
+.top-nav {
+    float: right;
+    list-style: none; /*gets rid of the unordered list/ul bulletpoints */
+   // margin-top: px;
+}
+
+.top-nav li {
+    display: inline-flex;
+    padding: .75em;
+    overflow: hidden;
+   
+}
+
+top-nav {
+    float: right;
+    list-style: none; /*gets rid of the unordered list/ul bulletpoints */
+    margin-top: 55px;
+}
+
+.top-nav li a:link,
+.top-nav li a:visited { /*formats the list and the a link */
+    padding: 8px 0; /*adds spacing between content and border*/
+    color: goldenrod;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent; /*makes borders invisible till we hover*/
+    transition: border-bottom 0.2s;
+}
+
+.top-nav li a:hover,
+.top-nav li a:active {
+    border-bottom: 2px solid gold;
+}
+
+/*---------------------------------------------------*/
+/*   BUTTONS  */
+/*---------------------------------------------------*/
+
+.btn:link,
+.btn:visited {
+    position: relative;
+    display: inline-block;
+    padding: 4px 30px; /*10px of padding on top and bottom, 30 left and right*/
+    font-weight: 300;
+    text-decoration: none; /*gets rid of of the underline under the text*/
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    bottom: -360px;
+    left: -175px;
+
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e67e22;
+    border: 1px solid #e67e22;
+    color: black;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+   border: 1px solid #e67e22;
+   color: #e67e22;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #cf6d17;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    border: 1px solid #e67e22;
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+   border: 1px solid #e67e22;
+   color: #fff;
+}
+/*******************************************************/
+/*              FLIPPING ROCKS                          */
+/*******************************************************/
+
+.rocks{
+    
+    
+    background-color: #e7e7f0;
+    
+}
+
+.rocks-container {
+    margin-top: 20px;
+    position: relative;
+    margin-left: 150px;
+    margin-right: 150px;
+}  
+.flip-box-inner {
+    background-color: transparent;;
+    background-color: rgb(221, 221, 221);
+    
+    filter: drop-shadow(0px 6px 18px rgba(0, 0, 0.06))
+}
+
+.flip-box-inner li {
+    position: relative;
+    display: inline-flex;
+    //top: -50px;
+    //padding: 30px;
+    //perspective: 1000px;
+    
+}
+
+img{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.flip-box-front img:hover{
+    opacity: .2;
+
+}
+
+
+/*
+
+.rocks-container img {
+    height: 320px;
+    width: 320px;
+    padding-right: 80px;
+    
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-box-inner {
+   transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    //width: 100%;
+    //height: 100%;
+    display: inner-flex;
+    -webkit-backface-visibility: hidden; /*safari
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    //background-color: black;
+    width: 300px;
+    height: 400px;
+    color: goldenrod;
+    //font-weight: 500;
+}
+
+.flip-box-back {
+    background-color: black;
+    color: goldenrod;
+    transform: rotateY(180deg);
+}
+
+ .flip-box-back p {
+    font-size: .7em;
+    color: black;
+    
+}
+
+/*******************************************************/
+/*              FALLING PETAL                         */
+
+
+/*******************************************************/
+/*              MEDIA QUERIES                         */
+/*******************************************************/
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .top-nav {
+    width: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .top-nav {
+    width: 100%;
+  }
+   
+}
+
+@media (max-width: 1024px)  {
+   .rocks {
+        display: inline-flex;
+        
+    }
+    
+} 
+
+/*
+.rocks{
+    
+    height: 500px;
+    
+}
+.rocks-container {
+    margin-top: 90px;
+    position: relative;
+    margin-left: 150px;
+    display: inline-flex;
+    filter: drop-shadow(0px 6px 18px rgba(0, 0, 0.06))
+}
+
+.flip-container {
+    background-color: transparent;
+    width: 250px;
+    
+    perspective: 1000px;
+    
+}
+
+.rocks-container img {
+    height: 320px;
+    width: 320px;
+    padding-right: 80px;
+    
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-box-inner {
+   transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /*safari
+    backface-visibility: hidden;
+}
+
+.flip-box-front {
+    //background-color: black;
+    width: 300px;
+    height: 400px;
+    color: goldenrod;
+    //font-weight: 500;
+}
+
+.flip-box-back {
+    background-color: black;
+    color: goldenrod;
+    transform: rotateY(180deg);
+}
+
+ .flip-box-back p {
+    font-size: .7em;
+    color: black;
+*/
+
+/*.flip-container {
+    position: relative;
+    background-color: transparent;
+    width: 220px;
+    height: 300px;
+    //border: 1px solid white;
+    perspective: 1000px;
+    //float: left;
+    display:inline-flex;
+    //background-color: aqua;
+    
+    
+}
+
+.flip-cards-inner {
+    //position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    text-align: center;
+    //margin-top: 5px;
+    //margin-left: 5px;
+}
+
+ .flip-container:hover  .flip-cards-inner {
+    transform: rotateY(180deg);
+}
+
+
+ .card-front, .card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden; /*safari
+    backface-visibility: hidden;
+    background-color: black;
+    color: goldenrod;
+       
+}
+
+
+.card-front{
+   //position: relative;
+    //background-color: black;
+    color: goldenrod;
+}
+
+ .card-back  {
+     //position: relative;
+     //background-color: black;
+     //color: goldenrod;
+     transform: rotateY(180deg);
+}
+
+.options {
+    position: absolute;
+}
+
+*/
+/*home page section color background: #F9ED4E; #533549
+//.card-pic-front div, .card-detail-back div {
+    position: absolute;
+    margin: 5px;
+    padding: 5px;
+    float: left;
+    list-style: none;
+    display: inline-block;
+    
+}*/
